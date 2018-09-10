@@ -6,7 +6,7 @@ public class Rhombus extends Square {
 	private double angle;
 
 	public Rhombus(double side, double angle) {
-		this.side = side;
+		super(side);
 		this.angle = angle;
 	}
 	

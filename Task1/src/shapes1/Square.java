@@ -4,10 +4,6 @@ public class Square extends Shape {
 
 	double side;
 	
-	public Square() {
-		side = 3.0;
-	}
-
 	public Square(double side) {
 		this.side = side;
 	}
