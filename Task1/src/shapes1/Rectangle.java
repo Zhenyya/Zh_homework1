@@ -1,13 +1,17 @@
 package shapes1;
 
-public class Rectangle extends Shape {
+public class Rectangle extends Quadrangle {
 
-	double side1;
-	double side2;
+	private double side1;
+	private double side2;
+	private double side3;
+	private double side4;
 	
-	public Rectangle(double side1, double side2) {
-		this.side1 = side1;
-		this.side2 = side2;
+	public Rectangle(double a, double b) {
+		this.side1 = a;
+		this.side2 = b;
+		this.side3 = a;
+		this.side4 = b;
 	}
 
 	@Override
@@ -16,8 +20,4 @@ public class Rectangle extends Shape {
 		return area;
 	}
 
-	public double calcPerimeter() {
-		double perimeter = 2 * (side1 + side2);
-		return perimeter;
-	}
 }

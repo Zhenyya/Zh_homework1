@@ -1,10 +1,11 @@
 package shapes1;
 
-public class Square extends Shape {
+public class Square extends Quadrangle {
 
-	double side;
+	private double side;
 	
 	public Square(double side) {
+		super(side, side, side, side);
 		this.side = side;
 	}
 
@@ -12,11 +13,6 @@ public class Square extends Shape {
 	public double calcArea() {
 		double area = side * side;
 		return area;
-	}
-
-	public double calcPerimeter() {
-		double perimeter = 4 * side;
-		return perimeter;
 	}
 
 }

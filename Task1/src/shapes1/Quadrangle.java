@@ -7,6 +7,10 @@ public class Quadrangle extends Shape {
 	private double side3;
 	private double side4;
 
+	public Quadrangle() {
+		// side1 = side2 = side3 = side4 = 0;
+	}
+	
 	public Quadrangle(double side1, double side2, double side3, double side4) {
 		this.side1 = side1;
 		this.side2 = side2;
