@@ -9,12 +9,12 @@ public class Circle extends Shape {
 	}
 
 	@Override
-	public double calcArea() {
+	public double calculateArea() {
 		double area = Math.PI * radius * radius;
 		return area;
 	}
 	
-	public double calcLengthCircle() {
+	public double calculateCircleLength() {
 		double circleLength = 2 * Math.PI * radius;
 		return circleLength;
 	}

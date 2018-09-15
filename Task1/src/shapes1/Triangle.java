@@ -1,26 +1,27 @@
 package shapes1;
 
-public class Triangle extends Shape {
+public class Triangle extends Quadrangle {
 
-	private double side1;
-	private double side2;
-	private double side3;
+	private double sideOne;
+	private double sideTwo;
+	private double sideThree;
 
-	public Triangle(double side1, double side2, double side3) {
-		this.side1 = side1;
-		this.side2 = side2;
-		this.side3 = side3;
+	public Triangle(double sideOne, double sideTwo, double sideThree) {
+		this.sideOne = sideOne;
+		this.sideTwo = sideTwo;
+		this.sideThree = sideThree;
 	}
 
 	@Override
-	public double calcArea() {
-		double p = 0.5 * calcPerimeter();
-		double area = Math.sqrt(p * (p - side1) * (p - side2) * (p - side3));
+	public double calculateArea() {
+		double p = 0.5 * calculatePerimeter();
+		double area = Math.sqrt(p * (p - sideOne) * (p - sideTwo) * (p - sideThree));
 		return area;
 	}
 
-	public double calcPerimeter() {
-		double perimeter = side1 + side2 + side3;
+	@Override
+	public double calculatePerimeter() {
+		double perimeter = sideOne + sideTwo + sideThree;
 		return perimeter;
 	}
 

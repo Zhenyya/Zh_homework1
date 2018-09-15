@@ -1,18 +1,28 @@
 package shapes1;
 
-public class Parallelogram extends Rectangle {
+public class Parallelogram extends Quadrangle {
 	
+	private double sideOne;
+	private double sideTwo;
 	double angle;
 
-	public Parallelogram(double side1, double side2, double angle) {
-		super(side1, side2);
+	public Parallelogram(double sideOne, double sideTwo, double angle) {
+		this.sideOne = sideOne;
+		this.sideTwo = sideTwo;
 		this.angle = angle;
 	}
 
 	@Override
-	public double calcArea() {
-		double area = side1 * side2 * Math.sin(angle * Math.PI / 180);
+	public double calculatePerimeter() {
+		double perimeter = 2 * (sideOne + sideTwo);
+		return perimeter;
+	}
+
+	@Override
+	public double calculateArea() {
+		double area = sideOne * sideTwo * Math.sin(angle * Math.PI / 180);
 		return area;
 	}
+
 }
 

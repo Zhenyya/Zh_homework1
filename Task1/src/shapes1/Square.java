@@ -5,12 +5,17 @@ public class Square extends Quadrangle {
 	private double side;
 	
 	public Square(double side) {
-		super(side, side, side, side);
 		this.side = side;
 	}
 
 	@Override
-	public double calcArea() {
+	public double calculatePerimeter() {
+		double perimeter = 4 * side;
+		return perimeter;
+	}
+
+	@Override
+	public double calculateArea() {
 		double area = side * side;
 		return area;
 	}
