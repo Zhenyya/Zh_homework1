@@ -1,6 +1,7 @@
 package shapes1;
 
 public class Circle extends Shape {
+	// this class can be extended later
 	
 	private double radius;
 	
